@@ -15,54 +15,56 @@
 
 <body>
   <!--navbar begins-->
-  <nav class="navbar navbar-expand-lg" id="navbar-style">
-    <div class="container-fluid">
-      <img src="images/logo.png" alt="..." height="85px">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <div class="d-flex justify-content-center">
-          <form class="d-flex">
-            <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Find your Abode..."
-              value="" />
-            <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
-              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                <path fill="#666666"
-                  d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
-              </svg>
-            </button>
+    <div class="row navbar-style">
+      <div class="col-lg-1" style="text-align: center;">
+        <img src="images/logo.png" alt="..." height="85px">
+      </div>
+
+      <div class="col-lg-10 header">
+            <form style="width: 20%; margin: auto; min-width: 20em;">
+              <div class="input-group">                    
+                  <input type="text" class="form-control" placeholder="Find your Abode...">
+                  <button type="button" class="btn btn-secondary" id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="#666666"
+                        d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                    </svg>
+                  </button>
+              </div>
           </form>
-        </div>
       </div>
-
+      
+      
       <!-- right most elements -->
-      <div class="d-flex justify-content-end">
-        <svg id="image-style" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-          class="bi bi-globe" viewBox="0 0 16 16">
-          <path
-            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
-        </svg><br>
-        <div class="dropdown">
-          <svg id="image-style2" data-bs-toggle="dropdown" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-            fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+      <div class="col-lg-1 header" style="text-align: center;">
+          <div class="row">
+            <div id="image-style">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+            class="bi bi-globe" viewBox="0 0 16 16">
             <path
-              d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
           </svg>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link 1</a></li>
-            <li><a class="dropdown-item" href="#">Link 2</a></li>
-            <li><a class="dropdown-item" href="#">Link 3</a></li>
-            <li><a class="dropdown-item-text" href="#">Text Link</a></li>
-            <li><span class="dropdown-item-text">Just Text</span></li>
-          </ul>
-        </div>
+            </div>
+            <div id="image-style2">
+              <div class="dropdown">
+                <svg data-bs-toggle="dropdown" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                  fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+                </svg>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                  <li><a class="dropdown-item" href="#">Sign In</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="#">Help</a></li>
+                </ul>
+              </div>
+            </div>
+          
+          </div>
+          
       </div>
-
     </div>
-    </div>
-  </nav>
   <!--navbar ends-->
 
   <hr>
@@ -71,10 +73,10 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-  <div class="row">
-    <div class="col">
+  <div class="row mx-auto">
+    <div class="col-lg-3">
       <!--card 1-->
-      <div class="card" style="width: 18rem;">
+      <div class="card">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -122,9 +124,8 @@
     </div>
 
     <!--card 2-->
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <div class="card" style="width: 18rem;">
+    <div class="col-lg-3">
+        <div class="card">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -169,13 +170,11 @@
             </p>
           </div>
         </div>
-      </div>
     </div>
 
     <!--card 3-->
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <div class="card" style="width: 18rem;">
+    <div class="col-lg-3">
+        <div class="card">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -220,13 +219,11 @@
             </p>
           </div>
         </div>
-      </div>
     </div>
 
     <!--card 4-->
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <div class="card" style="width: 18rem;">
+    <div class="col-lg-3">
+      <div class="card">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -271,7 +268,6 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
   
   <p></p>
