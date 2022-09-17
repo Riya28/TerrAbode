@@ -7,30 +7,34 @@
     border-radius: 1.625rem;
     padding: 0 3.5rem 0 1.5rem;
     font-size: 1rem;
-    margin-left: 400px;
   }
 
   #searchQuerySubmit {
-    width: 3.5rem;
-    height: 2.8rem;
-    margin-left: -3.5rem;
     background: #FF7607;
-    border-radius: 1.625rem;
-    padding: 0 2.0rem 0 1.0rem;
-    border: none;
-    outline: none;
   }
 
   #searchQuerySubmit:hover {
     cursor: pointer;
   }
 
-  #navbar-style {
+  .navbar-style {
     background-color: #ffffff;
   }
+  
+  .header {
+    padding-top: 1%;
+  }
 
+  #image-style {
+    text-align: right;
+  }
+
+  #image-style2 {
+    text-align: left;
+  }
+  
   #image-style, #image-style2{
-    margin-right:50px;
+    width: 50%;
   }
 
   #terms{
