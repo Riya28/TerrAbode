@@ -40,3 +40,7 @@
   #side-nav{
     background-color: #FAF9F6;
   }
+
+  .checked {
+    color: orange;
+  }
